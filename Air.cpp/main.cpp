@@ -1643,6 +1643,14 @@ void keyReleased(unsigned char key, int x, int y)
 	keyStates[key] = false;
 }
 
+void sound()
+{
+
+    //PlaySound("a.wav", NULL, SND_ASYNC|SND_FILENAME);
+    PlaySound("sound1.wav", NULL,SND_ASYNC|SND_FILENAME|SND_LOOP);
+
+}
+
 
 int main(int argc, char **argv)
 {
@@ -1661,6 +1669,6 @@ int main(int argc, char **argv)
 	glGetIntegerv(GL_VIEWPORT ,m_viewport);
     glutDisplayFunc(display);
     glutTimerFunc(100, update1, 0);
-
+	sound();
     glutMainLoop();
 }
