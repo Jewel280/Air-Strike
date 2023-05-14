@@ -1,0 +1,11 @@
+# depslib dependency file v1.0
+1684056466 source:c:\air.cpp\main.cpp
+	<windows.h>
+	<stdio.h>
+	<stdlib.h>
+	<GL/glut.h>
+	<math.h>
+	<iostream>
+	<cstdlib>
+	<ctime>
+
